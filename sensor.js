@@ -1,5 +1,19 @@
-var jsonSensors = require('./sensors.json');
-var sensorDataStr = JSON.stringify(jsonSensors);
-var sensorData = JSON.parse(sensorDataStr);
+var jsonSensors = require("./sensors.json");
 
-console.log(sensorData[0].name);
+function Sensors() {
+  this.sensorInfo;
+}
+
+Sensors.prototype = {
+
+    jsonToArray: function() {
+      var sensorInfoStr = JSON.stringify(jsonSensors);
+      return this.sensorInfo = JSON.parse(sensorInfoStr);
+    },
+
+    sensorNameByIndex: function(n) {
+      this.jsonToArray();
+      return this.sensorInfo[n].name;
+    },
+
+};
