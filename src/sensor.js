@@ -1,4 +1,4 @@
-var jsonSensors = require("./sensors.json");
+var jsonSensors = require("../data/sensors.json");
 
 function Sensors() {
   this.sensorInfo;

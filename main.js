@@ -1,8 +1,16 @@
-var http = require("http");
+import react from "react";
+import ReactDOM from "react-dom";
 
-http.createServer(function (request, response) {
-  response.writeHead(200, { "Content-Type": "text/plain" });
-  response.end("Hello World\n");
-}).listen(8080);
+ReactDOM.render(
+  <h1>Sensor Data</h1>,
+  document.getElementById("app")
+);
+
+// var http = require("http");
+//
+// http.createServer(function (request, response) {
+//   response.writeHead(200, { "Content-Type": "text/plain" });
+//   response.end("Hello World\n");
+// }).listen(8080);
 
 // console.log("Server running at http://127.0.0.1:8080");

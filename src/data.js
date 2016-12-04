@@ -1,4 +1,4 @@
-var jsonData = require("./data.json");
+var jsonData = require("../data/data.json");
 
 function Data() {
   this.sensorData;
@@ -22,3 +22,6 @@ Data.prototype = {
     return dataWithId;
   },
 };
+
+var data = new Data();
+console.log(data.jsonToArray());
