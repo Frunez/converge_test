@@ -1,5 +1,24 @@
-var jsonData = require("./data.json")
+var jsonData = require("./data.json");
 
 function Data() {
-  
+  this.sensorData;
+  this.dataId;
 }
+
+Data.prototype = {
+
+  jsonToArray: function() {
+    var sensorDataStr = JSON.stringify(jsonData);
+    return this.sensorData = JSON.parse(sensorDataStr);
+  },
+
+  mapDataById: function(wantedId) {
+    this.jsonToArray();
+    var dataWithId = this.sensorData.filter(function(item) {
+      if (item.sensorId === wantedId) {
+        return item;
+      }
+    });
+    return dataWithId;
+  },
+};
