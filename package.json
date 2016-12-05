@@ -7,12 +7,18 @@
   "author": "Gideon Farrell <gideon@converge.io>",
   "license": "UNLICENSED",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "eslint": "^3.10.2",
     "eslint-plugin-react": "^6.7.1"
   },
   "description": "The purpose of this exercise is to test your ability to build a basic front-end application in react which can pull data from an api.",
   "main": "index.js",
   "dependencies": {
+    "babelify": "^7.3.0",
     "browserify": "^13.1.1",
     "eslint": "^3.11.1",
     "eslint-plugin-react": "^6.8.0",
@@ -22,6 +28,7 @@
     "node-uuid": "^1.4.7",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-router": "^3.0.0",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   },

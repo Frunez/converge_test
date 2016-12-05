@@ -4,7 +4,7 @@ module.exports = React.createClass({
   render: function() {
     return(
       <div>
-        <a href="#">{this.props.info.name}</a>
+        {this.props.info.name}
       </div>
     )
   }
