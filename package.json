@@ -2,12 +2,40 @@
   "name": "converge-frontend-exercise",
   "version": "1.1.0",
   "scripts": {
-      "lint": "eslint --quiet *.js **/*.js"
+    "lint": "eslint --quiet *.js **/*.js"
   },
   "author": "Gideon Farrell <gideon@converge.io>",
   "license": "UNLICENSED",
   "devDependencies": {
     "eslint": "^3.10.2",
     "eslint-plugin-react": "^6.7.1"
-  }
+  },
+  "description": "The purpose of this exercise is to test your ability to build a basic front-end application in react which can pull data from an api.",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "eslint": "^3.11.1",
+    "eslint-plugin-react": "^6.8.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "node-uuid": "^1.4.7",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frunez/converge_test.git"
+  },
+  "keywords": [
+    "converge",
+    "frontend",
+    "react",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/Frunez/converge_test/issues"
+  },
+  "homepage": "https://github.com/Frunez/converge_test#readme"
 }
