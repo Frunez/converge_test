@@ -1,7 +1,10 @@
 //libraries
 var React = require("react");
 var ReactDOM = require("react-dom");
-import { Router, Route, Link, browserHistory } from "react-router";
+var Router = require('react-router').Router;
+var Route = require('react-router').Route;
+var Link = require('react-router').Link;
+var Routes = require("../server/routes")
 //components and stores
 var SensorList = require("./components/SensorList.jsx");
 var sensorStore = require("./stores/sensorStore");
@@ -11,7 +14,9 @@ sensorStore.onChange(function(sensors){
 });
 
 function render() {
-  ReactDOM.render(<SensorList sensors={_sensors} />,
-  document.getElementById("container"));
+  ReactDOM.render(
+    <SensorList sensors={_sensors} />,
+    Routes,
+    document.getElementById("container"));
 }
 render();

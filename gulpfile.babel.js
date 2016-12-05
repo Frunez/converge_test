@@ -7,7 +7,8 @@ gulp.task("bundle", function () {
   return browserify({
     entries: "./app/main.jsx",
     debug: true,
-  }).transform(babelify.configure({
+  })
+  .transform(babelify.configure({
   presets: ["es2015", "react"]
 }))
   .bundle()

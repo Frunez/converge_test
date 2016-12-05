@@ -1,3 +1,4 @@
+var Link = require('react-router').Link;
 var Sensors = require("./Sensors.jsx");
 
 module.exports = React.createClass({displayName: "exports",
@@ -5,10 +6,11 @@ module.exports = React.createClass({displayName: "exports",
     return(
       React.createElement("div", null, 
         "Sensor Names:", 
+
         
-          this.props.sensors.map(function(sensor, index){
+            this.props.sensors.map(function(sensor, index){
             return(
-              React.createElement(Sensors, {info: sensor, key: "sensor"+index})
+                React.createElement(Link, {to: "/sensors/:id"}, React.createElement(Sensors, {info: sensor, key: "sensor"+index}))
             )
           })
         
