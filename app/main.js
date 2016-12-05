@@ -1,4 +1,3 @@
-var React = require("react");
 var ReactDOM = require("react-dom");
 var SensorList = require("./components/SensorList.jsx");
 var sensorStore = require("./stores/sensorStore");
@@ -16,7 +15,7 @@ sensorStore.onChange(function(sensors){
 // var _data = JSON.parse(sensorDataStr);
 
 function render() {
-  ReactDOM.render(<SensorList sensors={_sensors} />,
+  ReactDOM.render(React.createElement(SensorList, {sensors: _sensors}),
   document.getElementById("container"));
 }
 render();
